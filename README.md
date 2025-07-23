@@ -24,7 +24,6 @@
 * JPA (Hibernate)
 * MySQL
 * Gradle
-* Swagger (API 문서화)
 
 <br/>
 
