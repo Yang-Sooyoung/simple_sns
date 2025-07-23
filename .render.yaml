@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: simple-sns
+    env: java
+    buildCommand: "chmod +x gradlew && ./gradlew build"
+    startCommand: "java -Dserver.port=$PORT -jar build/libs/simple-sns-0.0.1-SNAPSHOT.jar"
+    plan: free
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      # - key: DB_URL
+      #   value: your-db-url
+      # - key: JWT_SECRET
+      #   value: your-secret-key
