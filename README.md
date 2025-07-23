@@ -1,4 +1,32 @@
-# Simple SNS
+## 💌 Simple sns
+
+>Spring-Boot와 JPA를 활용해 구현한 간단한 SNS 프로젝트입니다.
+>사용자는 회원가입, 로그인, 게시글 작성, 댓글 작성, 좋아요 기능 등을 통해 기본적인 SNS 기능을 경험할 수 있습니다.
+
+<br/>
+
+## 주요 기능
+
+* 회원가입 및 로그인 (Spring Security, JWT 토큰 기반 인증)
+* 게시글 CRUD(Create, Read, Update, Delete)
+* 댓글 CRUD
+* 게시글 좋아요 기능
+* 사용자 권한(Role) 관리
+* 예외 처리 및 유효성 검사
+
+<br/>
+
+## 기술 스택
+
+* Java 17
+* Spring Boot 3.x
+* Spring Security (JWT)
+* JPA (Hibernate)
+* MySQL
+* Gradle
+* Swagger (API 문서화)
+
+<br/>
 
 ## Application Architecture 
 ![system architecture](./doc/SystemArchitecture.png)
@@ -273,3 +301,12 @@ client ->> server: 알람 목록 요청
     server->>client: reason code와 함께 실패 반환
     end
 ```
+</br>
+
+#### 🙋‍♀️ 만든 사람
+
+- 👩‍💻 이름: 양수영 (Yang Sooyoung)
+- 🔗 GitHub: [@Yang-Sooyoung](https://github.com/Yang-Sooyoung)
+
+<br/>
+
