@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # 빌드 실행
-RUN chmod +x gradlew && ./gradlew build
+RUN chmod +x gradlew && gradlew clean build 
 
 # 앱 실행 (JAR 파일 경로 주의)
 CMD ["java", "-Dserver.port=$PORT", "-jar", "build/libs/simple-sns-0.0.1-SNAPSHOT.jar"]
